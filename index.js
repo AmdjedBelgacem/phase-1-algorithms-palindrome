@@ -1,5 +1,17 @@
+const { consoleLog } = require("mocha/lib/reporters/base");
+
 function isPalindrome(word) {
   // Write your algorithm here
+  palindomic = '';
+  for (let j = word.length -1; 0 <= j; j--){
+    palindomic += word[j];
+  }
+  if (palindomic == word){
+    return true;
+  } 
+  else {
+    return false;
+  }
 }
 
 /* 
